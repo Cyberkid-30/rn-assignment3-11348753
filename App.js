@@ -25,6 +25,6 @@ const styles = StyleSheet.create({
   },
 
   text2: {
-    // fontWeight: "bold",
+    fontWeight: "bold",
   },
 });
