@@ -1,25 +1,18 @@
 import React from "react";
 import { StyleSheet, View, Text, ScrollView } from "react-native";
 import CategoryItems from "./CategoryItems";
+import Category from "../CategoryItemsList";
 
 const Categories = () => {
-  const Category = [
-    {
-      title: "Exercise",
-      tasks: "12 tasks",
-      img: require("../assets/images/CategoriesCard.jpg"),
-    },
-    {
-      title: "Study",
-      tasks: "12 tasks",
-      img: require("../assets/images/woman.png"),
-    },
-  ];
-
   return (
     <View>
       <Text style={styles.categoryText}>Categories</Text>
-      <ScrollView>
+      <ScrollView
+        horizontal
+        style={styles.categoryContainer}
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={styles.contentContainer}
+      >
         {Category.map((item) => (
           <CategoryItems
             title={item.title}
@@ -36,6 +29,14 @@ const styles = StyleSheet.create({
   categoryText: {
     fontWeight: "bold",
     fontSize: 30,
+    marginBottom: 20,
+  },
+  categoryContainer: {
+    flexDirection: "row",
+  },
+
+  contentContainer: {
+    justifyContent: "space-evenly",
   },
 });
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View, Text } from "react-native";
 
 const CategoryItems = ({ title, tasks, imgURL }) => {
   return (
@@ -15,11 +15,14 @@ const CategoryItems = ({ title, tasks, imgURL }) => {
 
 const styles = StyleSheet.create({
   container: {
-    width: 120,
-    height: 200,
+    width: 200,
+    height: 230,
+    padding: 20,
     flexDirection: "column",
     gap: 10,
-    borderRadius: 20,
+    borderRadius: 30,
+    backgroundColor: "#fff",
+    marginHorizontal: 10,
   },
 
   title: {
