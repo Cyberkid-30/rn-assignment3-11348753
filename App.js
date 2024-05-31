@@ -1,13 +1,15 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Alert, Button, Image, StyleSheet, Text, View } from "react-native";
+import Header from "./components/Header";
+import Categories from "./components/Categories";
+import Search from "./components/Search";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>
-        My name is <Text style={styles.text2}>Kwabena.</Text>
-      </Text>
-      <StatusBar style="auto" />
+      <Header />
+      <Search />
+      <Categories />
     </View>
   );
 }
@@ -15,16 +17,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "yellow",
-    alignItems: "center",
-    justifyContent: "center",
+    paddingHorizontal: 20,
+    paddingVertical: 30,
+    backgroundColor: "#f0e2d3",
   },
 
-  text: {
-    fontSize: 24,
-  },
-
-  text2: {
-    fontWeight: "bold",
+  textContent: {
+    fontSize: 33,
   },
 });
