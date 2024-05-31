@@ -6,7 +6,7 @@ const Header = () => {
     <View style={styles.header}>
       <View>
         <Text style={styles.heading}>Hello, Devs</Text>
-        <Text>14 tasks today</Text>
+        <Text>15 tasks today</Text>
       </View>
       <Image
         style={styles.personIcon}

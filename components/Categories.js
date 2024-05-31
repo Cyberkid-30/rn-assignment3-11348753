@@ -11,7 +11,6 @@ const Categories = () => {
         horizontal
         style={styles.categoryContainer}
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.contentContainer}
       >
         {Category.map((item) => (
           <CategoryItems
@@ -33,10 +32,6 @@ const styles = StyleSheet.create({
   },
   categoryContainer: {
     flexDirection: "row",
-  },
-
-  contentContainer: {
-    justifyContent: "space-evenly",
   },
 });
 

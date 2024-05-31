@@ -1,8 +1,9 @@
-import { StatusBar } from "expo-status-bar";
+
 import { Alert, Button, Image, StyleSheet, Text, View } from "react-native";
 import Header from "./components/Header";
 import Categories from "./components/Categories";
 import Search from "./components/Search";
+import OngoingTasks from "./components/OngoingTasks";
 
 export default function App() {
   return (
@@ -10,13 +11,14 @@ export default function App() {
       <Header />
       <Search />
       <Categories />
+      <OngoingTasks />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     paddingHorizontal: 20,
     paddingVertical: 30,
     backgroundColor: "#f0e2d3",
