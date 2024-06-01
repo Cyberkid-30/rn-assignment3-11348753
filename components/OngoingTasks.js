@@ -12,7 +12,7 @@ const OngoingTasks = () => {
     { id: 6, task: "Play COD" },
     { id: 7, task: "Do my homework." },
     { id: 8, task: "Family time" },
-    { id: 9, task: "Crunces" },
+    { id: 9, task: "Crunches" },
     { id: 10, task: "Study Physics" },
     { id: 11, task: "Mobile App Development" },
     { id: 12, task: "Make cakes" },
